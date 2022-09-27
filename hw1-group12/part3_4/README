@@ -1,0 +1,13 @@
+Part3 Task4
+  
+part3_4.py contains all code for Part3 Task4 of the assignment
+
+To run part3_4.py, execute run.sh in this directory
+
+For this part, we first measured the 25% lifetime of the application and manually clear the memory cache using sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches" and killed the worker process (the one listed in jps). We repeated the same process one more time but killed the worker process at 75% lifetime.
+
+Note that we assume Hadoop and Spark exist in /mnt/data/hadoop-3.3.4/ and /mnt/data/spark-3.3.0-bin-hadoop3/, part3_4.py exists in /mnt/data/part3_4/part3_4.py, and enwiki-pages-articles exist in hdfs://10.10.1.1:9000/data-part3/enwiki-pages-articles
+
+It might be possible that when running the code and writing the output file to HDFS, you will encounter permission error. In this case, change the permission of HDFS by executing a command similar to /mnt/data/hadoop-3.3.4/bin/hdfs dfs -chmod -R 777 /
+
+List files in HDFS with /mnt/data/hadoop-3.3.4/bin/hdfs dfs -ls /

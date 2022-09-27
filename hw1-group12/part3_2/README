@@ -1,0 +1,13 @@
+Part3 Task2
+  
+part3_2.py contains all code for Part3 Task2 of the assignment
+
+To run part3_2.py, execute run.sh in this directory
+
+To set the number of partitions, edit NUM_PARTITION in part3_2.py 
+
+Note that we assume Hadoop and Spark exist in /mnt/data/hadoop-3.3.4/ and /mnt/data/spark-3.3.0-bin-hadoop3/, part3.py exists in /mnt/data/part3_1/part3_1.py, and enwiki-pages-articles exist in hdfs://10.10.1.1:9000/data-part3/enwiki-pages-articles
+
+It might be possible that when running the code and writing the output file to HDFS, you will encounter permission error. In this case, change the permission of HDFS by executing a command similar to /mnt/data/hadoop-3.3.4/bin/hdfs dfs -chmod -R 777 /
+
+List files in HDFS with /mnt/data/hadoop-3.3.4/bin/hdfs dfs -ls /

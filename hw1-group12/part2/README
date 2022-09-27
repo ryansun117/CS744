@@ -1,0 +1,11 @@
+Part2
+
+part2.py contains all code for Part2 of the assignment
+
+To run part2.py, execute run.sh in this directory
+
+Note that we assume Hadoop and Spark exist in /mnt/data/hadoop-3.3.4/ and /mnt/data/spark-3.3.0-bin-hadoop3/, part2.py exist in /mnt/data/part2/part2.py, and export.csv exist in hdfs://10.10.1.1:9000/export.csv
+
+It might be possible that when running part2.py and writing the output file to HDFS, you will encounter permission error. In this case, change the permission of HDFS by executing /mnt/data/hadoop-3.3.4/bin/hdfs dfs -chmod -R 777 /
+
+List files in HDFS with /mnt/data/hadoop-3.3.4/bin/hdfs dfs -ls /
